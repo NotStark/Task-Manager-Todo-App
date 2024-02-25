@@ -8,7 +8,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(replaceTasks(JSON.parse(localStorage.getItem("tasks") || [])));
+    dispatch(replaceTasks(JSON.parse(localStorage.getItem("tasks")) || []);
     console.log('hi');
   }, []);
 
