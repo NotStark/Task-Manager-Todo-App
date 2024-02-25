@@ -3,7 +3,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 // Create a slice for managing tasks
 const taskSlice = createSlice({
   name: "tasks",
-  initialState: { tasks: [] },
+  initialState: { tasks: JSON.parse(localStorage.getItem("tasks")) || [] },
   reducers: {
     // Add a task to the state
     addTask: (state, action) => {
@@ -28,10 +28,6 @@ const taskSlice = createSlice({
         }
         return task;
       });
-    },
-
-    replaceTasks: (state, action) => {
-      state.tasks = action.payload;
     },
   },
 });
