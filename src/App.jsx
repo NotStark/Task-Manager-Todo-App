@@ -1,16 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { AddTask, Tasks } from "./components";
-import { replaceTasks } from "./redux/taskSlice";
-import { useDispatch } from "react-redux";
 
 function App() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(replaceTasks(JSON.parse(localStorage.getItem("tasks")) || []));
-    console.log('hi');
-  }, []);
+ 
 
   return (
     <>
