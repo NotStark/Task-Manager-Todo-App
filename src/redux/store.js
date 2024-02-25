@@ -1,4 +1,4 @@
-// Import the necessary modules
+
 import { configureStore } from "@reduxjs/toolkit";
 import taskSlice from "./taskSlice";
 
