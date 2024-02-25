@@ -11,7 +11,7 @@ const store = configureStore({
 store.subscribe(() => {
   const tasks = store.getState().taskSlice.tasks;
   // console.log(tasks);
-  localStorage.setItem("tasks", JSON.stringify(tasks)); // overite nhi karna lol
+  localStorage.setItem("tasks", JSON.stringify(tasks)); 
   
 });
 
