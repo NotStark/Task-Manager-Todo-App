@@ -9,11 +9,11 @@ function AddTask() {
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
+     e.preventDefault();
     if (input === "") {
       toast.error("Provide a task", { duration: 4000 , position: "top-left"});
       return;
     }
-    e.preventDefault();
     dispatch(addTask(input));
     setInput("");
   };
