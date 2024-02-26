@@ -7,7 +7,7 @@ const store = configureStore({
   reducer: { taskSlice },
 });
 
-// Subscribe to changes in the store
+// Subscribe to changes in the store (runs on the every change in the state)
 store.subscribe(() => {
   const tasks = store.getState().taskSlice.tasks;
   // console.log(tasks);
