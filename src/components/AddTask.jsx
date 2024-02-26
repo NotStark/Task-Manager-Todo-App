@@ -11,7 +11,7 @@ function AddTask() {
   const handleSubmit = (e) => {
      e.preventDefault();
     if (input === "") {
-      toast.error("Provide a task", { duration: 4000 , position: "top-left"});
+      toast.error("Provide a task");
       return;
     }
     dispatch(addTask(input));
