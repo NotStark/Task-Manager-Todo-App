@@ -33,7 +33,7 @@ const taskSlice = createSlice({
 });
 
 // Export the action creators
-export const { addTask, removeTask, changeStatus , replaceTasks} = taskSlice.actions;
+export const { addTask, removeTask, changeStatus} = taskSlice.actions;
 
 // Export the reducer
 export default taskSlice.reducer;
